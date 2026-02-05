@@ -22,3 +22,11 @@ def test_normaltest():
     x = rng.normal(0, 1, 100)
     stat, p = stats.normaltest(x)
     assert p > 0.05
+
+
+def test_pearsonr():
+    x = np.array([1.0, 2.0, 3.0, 4.0, 5.0])
+    y = np.array([2.0, 4.0, 6.0, 8.0, 10.0])
+    r, p = stats.pearsonr(x, y)
+    assert np.isclose(r, 1.0)
+    assert np.isclose(p, 0.0)
