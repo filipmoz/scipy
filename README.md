@@ -1,4 +1,4 @@
-# statistic_research
+# statistic_research with scipy 
 
 Basic statistical operations using scipy (>=1.11.0).
 
